@@ -1,0 +1,39 @@
+
+footer {
+    color:#2E3D4F ;
+    background-color: #ECF0F1;
+    margin: auto;
+    text-align: center;
+    width: 55vw;
+
+    
+}
+
+header {
+    width: 55vw;
+    margin: auto;
+    text-align: center;
+}
+p {
+    width: 55vw;
+    text-align:left;
+}
+#titulo {
+    text-align: left;
+    color:#2E3D4F ;
+    background-color: #ECF0F1;
+
+
+  
+}
+
+.europa {
+    color:#E84A41 ;
+    background-color:#F9EBEA ;
+}
+
+nav{
+    width: 55vw;
+    margin: auto;
+
+}
