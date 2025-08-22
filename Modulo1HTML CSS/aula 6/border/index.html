@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border</title>
+    <style>
+        main {
+            margin: auto;
+            width: 80vw;
+            border: 1px solid rgb(0, 158, 0);
+            box-shadow:  1px 1px 10px black;
+        }
+
+        #box1 {
+            border-width: 1px;
+            border-color: rgb(255, 0, 0);
+            border-style: dashed;
+            width: 100%;
+
+            
+        }
+        #box2 {
+            border-width: 1px;
+            border-color: rgb(0, 47, 255);
+            border-style: dotted;
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            border-radius: 15px;
+        }
+        #box3 {
+            height: 250px;
+            background-image: linear-gradient(to top, rgb(0, 195, 255), pink, white, white, pink, rgb(0, 195, 255));
+            border-top: 1px solid black;
+            border-bottom: 1px dashed rgb(119, 128, 0);
+            border-right: 1px dotted rgb(0, 110, 255);
+            border-left: 1px solid white;
+ 
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div id="box1"> primeira caixa</div>
+        <br>
+        <div id="box2"> segunda caixa</div>
+        <br>
+        <div id="box3"> terceira caixa</div>
+        <br>
+  
+    </main>
+    
+</body>
+</html>
+<!-- px tamanho fixo, width segue com o mesmo tamanho da pagina caso diminua, % medida que vai em tantos por cento acompanhar a tagn dominante ex.:main>section, a tag dominante é main-->
