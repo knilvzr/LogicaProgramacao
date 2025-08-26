@@ -1,39 +1,68 @@
-
-footer {
-    color:#2E3D4F ;
-    background-color: #ECF0F1;
+body {
     margin: auto;
-    text-align: center;
-    width: 55vw;
+    width: 50vw;
+}
 
+#destinos {
+    font-size: 36px;
+    color: #2c3e50;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+#maravilhas {
+    font-size: 36px;
+    color: #27ae60;
+    background-color: #efefef;
+    text-align: center;
+}
+
+#cidades {
+    font-size: 36px;
+    color:#f39c12;
+    background-color: #fff3e6;
+    text-align: center;
+}
+
+#experiencias {
+    font-family: 35px;
+    color: #8e44ad;
+    background-color: #f5e6f5;
+    text-align: center;
     
 }
 
-header {
-    width: 55vw;
-    margin: auto;
-    text-align: center;
-}
-p {
-    width: 55vw;
-    text-align:left;
-}
-#titulo {
-    text-align: left;
-    color:#2E3D4F ;
-    background-color: #ECF0F1;
-
-
-  
+.paris, .roma, .kyoto {
+    font-size: 28px;
+    color: #c74c3c;
+    background-color: #f9ebea;
 }
 
-.europa {
-    color:#E84A41 ;
-    background-color:#F9EBEA ;
+.grand, .amazonia, .great {
+    font-size: 28px;
+    color: #27ae60;
+    background-color: #e9f7ef;
 }
 
-nav{
-    width: 55vw;
-    margin: auto;
-
+.nova, .barcelona, .bangkok {
+    font-size: 28px;
+    color: #f39c12;
+    background-color: #fff3e6;
 }
+
+.jerusalem, .marrakech, .veneza {
+    font-size: 28px;
+    color: #8e44ad;
+    background-color: #f5e6f5;
+}
+
+
+P {
+    font-size: 1em;
+    color: #33495e;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+    
+
