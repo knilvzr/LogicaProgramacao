@@ -52,12 +52,19 @@ h1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 60vh;
         width: 40vw;
+        height: 100vh;
+        margin: auto;
     }
+
+   
     #img-tela-media {
         display: block;
         width: 100%;
-        height: auto;
+    }
+
+    
+    #img-tela-grande {
+        display: none;
     }
 }
