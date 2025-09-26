@@ -18,6 +18,5 @@ function calcularPagamento() {
             break
         default:
             resultado.innerHTML = "valor invalido"
-            break
     }
 }
