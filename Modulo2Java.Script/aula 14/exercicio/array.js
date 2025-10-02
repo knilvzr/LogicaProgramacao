@@ -5,16 +5,14 @@ let listaProdutos = [
     {nome:"teclado" ,fabricante: "samsung", valor:203 },
     {nome:"celular",fabricante: "xiaomi", valor:204 }
 ]
-console.log((listaProdutos[2]))
+//console.log((listaProdutos[2]))
 // => é uma maneira simplificada de que se foi escrita uma função
  listaProdutos.forEach((produto) => {
-    console.log()
+    console.log(`O ${produto.nome} da ${produto.fabricante} custa R$: ${produto.valor}` );
+})
 
- })
-
- const listaProdutosCaros = [ listaProdutos
-
- ]
+let listaProdutosCaros = listaProdutos.filter(produto => produto.valor > 1000)
+console.log(listaProdutosCaros);
 
 
  
