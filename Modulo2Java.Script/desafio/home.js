@@ -1,11 +1,15 @@
-const imgs = document.getElementById("img");
-const img = document.querySelectorAll("#img img")
-let idx = 0
-function carrosel(){
-    idx++;
-    if (idx >img.length - 1){
-        idx=  0
-    }
-    imgs.style.transform = `translateX(${-idx* 500}px)`
+let css = document.getElementById("nav1")
+function entradaMouse() {
+    css.style.backgroundColor = "rgba(255, 114, 114, 0.562)"
 }
-setInterval(carrosel, 2000);
+function saidaMouse() {
+    css.style.backgroundColor = " rgba(240, 248, 255, 0.459)"
+}
+
+let css1 = document.getElementById("nav2")
+function entradaMouse1() {
+    css1.style.backgroundColor = "rgba(114, 140, 255, 0.56)"
+}
+function saidaMouse1() {
+    css1.style.backgroundColor = " rgba(240, 248, 255, 0.459)"
+}
