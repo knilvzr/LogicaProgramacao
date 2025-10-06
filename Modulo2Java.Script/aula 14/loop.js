@@ -16,7 +16,7 @@ for (let i = 0; i < listaProdutos.length; i++ ) {
 listaProdutos.forEach ((produto) => {
     console.log(produto);
 
-}) //for produto in listaprodutos
+}) 
 
 //diferença de aarray para objeto, objetos é composto por chaves e valores. (api, json = chave), objetos = dicioario, objeto dentro do java const produto = { chave:"valor", nome:"notebook"}
 let produto = {
