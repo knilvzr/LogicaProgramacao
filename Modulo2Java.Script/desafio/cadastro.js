@@ -4,13 +4,32 @@ let alunos = [
     {nome: "evelyn", nota: 0}
 ];
 
+let mostrarApenasAprovados = false;
 
 function exibirAlunos() {
     p.innerHTML = "";
-    for (let aluno of alunos) {
-        p.innerHTML += `${aluno.nome} possui nota ${aluno.nota}<br>`;
+    
+    let alunosParaExibir = alunos;
+    if (mostrarApenasAprovados) {
+        alunosParaExibir = alunos.filter(aluno => aluno.nota >= 7);
+    }
+    if (alunosParaExibir.length === 0) {
+        p.innerHTML = "Nenhum aluno para exibir";
+        return;
+    }
+    for (let aluno of alunosParaExibir) {
+        const corClasse = aluno.nota >= 7 ? 'aprovado' : 'reprovado';
+        p.innerHTML += `<span class="${corClasse}">${aluno.nome} - Nota: ${aluno.nota}</span><br>`;
     }
 }
+    
+
+//function exibirAlunos() {
+    //p.innerHTML = "";
+    //for (let aluno of alunos) {
+        //p.innerHTML += `${aluno.nome} possui nota ${aluno.nota}<br>`;
+    //}
+//}
 
 
 exibirAlunos();
@@ -32,4 +51,15 @@ function adicionarAluno() {
     
     exibirAlunos();
 }
+function mostrarAprovados() {
+    mostrarApenasAprovados = true;
+    exibirAlunos();
+}
+
+function mostrarTodos() {
+    mostrarApenasAprovados = false;
+    exibirAlunos();
+}
+
+exibirAlunos();
 

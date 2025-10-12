@@ -96,3 +96,24 @@ main p {
         font-size: 0.9rem;
     }
 }
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.filter-buttons button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+}
+
+.aprovado {
+    color: green;
+    font-weight: bold;
+}
+
+.reprovado {
+    color: red;
+}
