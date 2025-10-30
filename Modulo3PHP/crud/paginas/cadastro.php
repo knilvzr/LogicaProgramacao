@@ -55,14 +55,14 @@
                 $hoje = new DateTime();
                 $id = $hoje->format("Ym") . rand(100,999);
 
-                $sql = "INSERT INTO usuarios (id, nome, sobrenome, email, curso) values (?,?,?,?,?)"
+                $sql = "INSERT INTO usuarios (id, nome, sobrenome, email, curso) values (?,?,?,?,?)";
                 //stmt = statment (pode ser outro nomese quiser)
                 $stmt = $conn ->prepare($sql);
                 $stmt ->bind_param("issss", $id,$nome,$sobrenome,$email,$curso); // i = inteiro,  s = string, cada interrogaçao é lida pelo programa assim, cada ? é lida como o que foi declarado
                 $stmt-> execute();
                 echo "<div class = 'mensaem sucesso'> Usuario cadasrado com sucesso
                 </div>
-                "
+                ";
                 $stmt -> close();
                 $conn->close();
             }
