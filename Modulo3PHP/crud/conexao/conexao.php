@@ -1,16 +1,15 @@
 <?php
 
-    $servername = "locahost";
-    $username = "root"; //nome do usuario local do banco de daod spo estar usando um host local
+    $servername = "localhost"; //IP ou dominio do server
+    $username = "root"; // usuario do banco de dados
     $password = ""; //senha do usuario do banco de dados
-    $dbname = "faculdade"; //nome do banco de dados
+    $dbname = "faculdade";
 
-    //cria conexao
-    $conn = new mysqli($servername, $username, $password, $dbname)
+    // Cria a conexao
+    $conn = new mysqli($servername, $username, $password, $dbname);
 
-    //verifica conexao
-    if ($conn->connect_error) {
-        die("conexão falhou")
+    // Verificar conexao
+    if ($conn->connect_error){
+        die("Conexão Falhou");
     }
-
 ?>
