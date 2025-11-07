@@ -1,24 +1,24 @@
-<form action="processaNota.php" method="post" id="form-nota">
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nome</th>
-                <th>Sobrenome</th>
-                <th>Nota Atividae</th>
-                <th>Nota Prova</th>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>Nota Atividae</th>
+            <th>Nota Prova</th>
             </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>{row['id']}</td>
-                <td>{row['nome']}</td>
-                <td>{row['sobrenome']}</td>
-                <td><input type='number'name='nota_atividade[{$row['id']}]' required></td>
-                <td><input type='number'name='nota_porva[{$row['id']}]' required></td>
-            </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{row['id']}</td>
+            <td>{row['nome']}</td>
+            <td>{row['sobrenome']}</td>
+            <td>{row['nota_atividade']}</td>
+            <td>{row['nota_prova']}</td>
+            <td>{row['nota_final']}</td>
+            
+        </tr>
 
-        </tbody>
-    </table>
+    </tbody>
+</table>
 
-</form>

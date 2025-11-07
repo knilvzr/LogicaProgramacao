@@ -81,7 +81,7 @@
                                             <td>{row['nome']}</td>
                                             <td>{row['sobrenome']}</td>
                                             <td><input type='number'name='nota_atividade[{$row['id']}]' required></td>
-                                            <td><input type='number'name='nota_porva[{$row['id']}]' required></td>
+                                            <td><input type='number'name='nota_prova[{$row['id']}]' required></td>
                                         </tr>";
                                 }
                                 echo "
